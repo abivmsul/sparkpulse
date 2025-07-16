@@ -26,7 +26,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
       {subtitle && <p className="text-lg mb-6">{subtitle}</p>}
       <a
         href={ctaLink}
-        className="inline-block bg-gold-500 hover:bg-gold-600 text-gray-900 font-semibold py-3 px-6 rounded-lg transition"
+        className="inline-block bg-blue-600 rounded-r text-sm hover:bg-blue-700 font-semibold py-2 px-4 rounded-lg transition"
       >
         {ctaText}
       </a>
