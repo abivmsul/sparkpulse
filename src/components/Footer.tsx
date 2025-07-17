@@ -24,17 +24,17 @@ export default function Footer() {
           <div className="space-y-1">
             <h3 className="font-medium">Shop</h3>
             <ul className="space-y-1">
-              <li><a href="/products?cat=laptops" className="hover:text-white">Laptops</a></li>
-              <li><a href="/products?cat=desktops" className="hover:text-white">Desktops</a></li>
-              <li><a href="/products?cat=accessories" className="hover:text-white">Accessories</a></li>
+              <li><Link to="/products?cat=laptops" className="hover:text-white">Laptops</Link></li>
+              <li><Link to="/products?cat=desktops" className="hover:text-white">Desktops</Link></li>
+              <li><Link to="/products?cat=accessories" className="hover:text-white">Accessories</Link></li>
             </ul>
           </div>
           <div className="space-y-1">
             <h3 className="font-medium">Support</h3>
             <ul className="space-y-1">
-              <li><a href="/faq" className="hover:text-white">FAQ</a></li>
-              <li><a href="/contact" className="hover:text-white">Contact Us</a></li>
-              <li><a href="/shipping" className="hover:text-white">Shipping</a></li>
+              <li><Link to="/faq" className="hover:text-white">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:text-white">Contact Us</Link></li>
+              <li><Link to="/shipping" className="hover:text-white">Shipping</Link></li>
             </ul>
           </div>
         </div>
