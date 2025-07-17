@@ -1,5 +1,6 @@
 // src/components/HeroBanner.tsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface HeroBannerProps {
   backgroundImage: string;
@@ -24,12 +25,12 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
     <div className="relative z-10 max-w-2xl px-4">
       <h1 className="text-5xl font-bold mb-4">{title}</h1>
       {subtitle && <p className="text-lg mb-6">{subtitle}</p>}
-      <a
-        href={ctaLink}
+      <Link
+        to={ctaLink}
         className="inline-block bg-blue-600 rounded-r text-sm hover:bg-blue-700 font-semibold py-2 px-4 rounded-lg transition"
       >
         {ctaText}
-      </a>
+      </Link>
     </div>
   </section>
 );
