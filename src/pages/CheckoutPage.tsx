@@ -27,7 +27,7 @@ export default function CheckoutPage() {
     e.preventDefault();
     // TODO: integrate payment processing here
     // For now, simulate success:
-    alert('Order placed successfully!');
+    alert('ትዕዛዝዎ በተሳካ ሁኔታ ተፈፅሟል!');
     clearCart();
     navigate('/');
   };
@@ -45,7 +45,7 @@ export default function CheckoutPage() {
             type="text"
             placeholder="Full Name"
             required
-            className="w-full border rounded px-3 py-2"
+            className="w-full border rounded px-3 py-2 col-span-2"
           />
           <input
             name="email"
@@ -54,7 +54,7 @@ export default function CheckoutPage() {
             type="email"
             placeholder="Email Address"
             required
-            className="w-full border rounded px-3 py-2"
+            className="w-full border rounded px-3 py-2 col-span-2"
           />
           <input
             name="phone"
@@ -63,9 +63,9 @@ export default function CheckoutPage() {
             type="tel"
             placeholder="Phone Number"
             required
-            className="w-full border rounded px-3 py-2"
+            className="w-full border rounded px-3 py-2 col-span-2"
           />
-          <input
+          {/* <input
             name="postcode"
             value={form.postcode}
             onChange={handleChange}
@@ -73,16 +73,7 @@ export default function CheckoutPage() {
             placeholder="Postal Code"
             required
             className="w-full border rounded px-3 py-2"
-          />
-          <input
-            name="address"
-            value={form.address}
-            onChange={handleChange}
-            type="text"
-            placeholder="Street Address"
-            required
-            className="w-full border rounded px-3 py-2 col-span-2"
-          />
+          /> */}
           <input
             name="city"
             value={form.city}
@@ -90,9 +81,18 @@ export default function CheckoutPage() {
             type="text"
             placeholder="City"
             required
-            className="w-full border rounded px-3 py-2"
+            className="w-full border rounded px-3 py-2 col-span-2"
           />
           <input
+            name="address"
+            value={form.address}
+            onChange={handleChange}
+            type="text"
+            placeholder="Address"
+            required
+            className="w-full border rounded px-3 py-2 col-span-2"
+          />
+          {/* <input
             name="country"
             value={form.country}
             onChange={handleChange}
@@ -100,7 +100,7 @@ export default function CheckoutPage() {
             placeholder="Country"
             required
             className="w-full border rounded px-3 py-2"
-          />
+          /> */}
         </div>
 
         {/* Payment Placeholder */}
@@ -113,9 +113,9 @@ export default function CheckoutPage() {
         <button
           type="submit"
         //   className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold py-3 rounded-lg transition"
-        className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg"
+        className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-3 rounded-lg"
         >
-          Place Order & Pay ${total.toFixed(2)}
+          Place Order  {total.toFixed(2)} ብር
         </button>
       </form>
 
@@ -126,13 +126,13 @@ export default function CheckoutPage() {
           {items.map(item => (
             <div key={item.id} className="flex justify-between py-3">
               <span>{item.name} × {item.quantity}</span>
-              <span>${(item.price * item.quantity).toFixed(2)}</span>
+              <span>{(item.price * item.quantity).toFixed(2)} ብር</span>
             </div>
           ))}
         </div>
         <div className="flex justify-between font-bold text-lg mt-4">
           <span>Total:</span>
-          <span>${total.toFixed(2)}</span>
+          <span>{total.toFixed(2)} ብር</span>
         </div>
       </div>
     </div>

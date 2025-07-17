@@ -16,7 +16,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => (
     />
     <div className="p-4">
       <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
-      <p className="mt-2 text-gray-600">${product.price.toFixed(2)}</p>
+      <p className="mt-2 text-gray-600">{product.price.toFixed(2)} ብር</p>
     </div>
   </Link>
 );

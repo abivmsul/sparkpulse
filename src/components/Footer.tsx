@@ -1,5 +1,5 @@
 // src/components/Footer.tsx
-import { FaFacebookF, FaInstagram, FaTiktok, FaTelegramPlane } from 'react-icons/fa';
+import { FaInstagram, FaTiktok, FaTelegramPlane } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 export default function Footer() {
@@ -43,10 +43,10 @@ export default function Footer() {
         <div className="space-y-2 text-sm">
           <h3 className="font-medium">Stay Connected</h3>
           <div className="flex space-x-3">
-            <a href="#" className="hover:text-white"><FaTiktok size={16} /></a>
-            <a href="#" className="hover:text-white"><FaTelegramPlane size={16} /></a>
-            <a href="#" className="hover:text-white"><FaFacebookF size={16} /></a>
-            <a href="#" className="hover:text-white"><FaInstagram size={16} /></a>
+            <a href="https://www.tiktok.com/@sparkpulsetech?_t=ZM-8y64HXEBVrC&_r=1" className="hover:text-white"><FaTiktok size={16} /></a>
+            <a href="https://www.instagram.com/sparkpulseelectronics?igsh=czZ1a3ppenliMmlu" className="hover:text-white"><FaInstagram size={16} /></a>
+            <a href="https://t.me/sparkpulsetech" className="hover:text-white"><FaTelegramPlane size={16} /></a>
+            {/* <a href="#" className="hover:text-white"><FaFacebookF size={16} /></a> */}
           </div>
           <form className="flex mt-2">
             <input

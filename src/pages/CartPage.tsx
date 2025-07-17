@@ -46,7 +46,7 @@ export default function CartPage() {
 
             <div className="flex-1 p-4">
               <h2 className="text-xl font-semibold">{item.name}</h2>
-              <p className="text-gray-600">${item.price.toFixed(2)}</p>
+              <p className="text-gray-600">{item.price.toFixed(2)} ብር</p>
 
               {/* Quantity Controls */}
               <div className="mt-4 flex items-center space-x-2">
@@ -69,7 +69,7 @@ export default function CartPage() {
             {/* Subtotal & Remove */}
             <div className="p-4 flex flex-col items-end space-y-4">
               <p className="text-lg font-semibold">
-                ${(item.price * item.quantity).toFixed(2)}
+                {(item.price * item.quantity).toFixed(2)} ብር
               </p>
               <button
                 onClick={() => removeFromCart(item.id)}
@@ -85,7 +85,7 @@ export default function CartPage() {
       {/* Cart Summary */}
       <div className="mt-8 flex justify-between items-center">
         <span className="text-2xl font-bold">Total:</span>
-        <span className="text-2xl font-semibold">${total.toFixed(2)}</span>
+        <span className="text-2xl font-semibold">{total.toFixed(2)} ብር</span>
       </div>
 
       {/* Checkout Button */}
@@ -93,7 +93,7 @@ export default function CartPage() {
          <button
         onClick={() => navigate('/checkout')}
         // className="bg-gold hover:bg-gold/90 text-navy font-semibold py-3 px-6 rounded-lg"
-        className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg"
+        className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg"
       >
         Proceed to Checkouddt
       </button>

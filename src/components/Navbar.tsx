@@ -21,7 +21,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
-              <img className="h-12 w-auto" src={logo} alt="DagiTech" />
+              <img className="h-15 w-auto" src={logo} alt="DagiTech" />
             </Link>
           </div>
 
