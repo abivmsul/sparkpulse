@@ -69,7 +69,7 @@ export default function ProductDetailPage() {
         {/* Right: Info */}
         <div className="space-y-2">
           <h1 className="text-xl font-semibold text-gray-800">{product.name}</h1>
-          <p className="text-xl font-bold text-blue-600">${product.price.toFixed(2)}</p>
+          <p className="text-xl font-bold text-blue-600">{product.price.toFixed(2)} ብር</p>
           <p className="text-xs text-gray-500">
             SKU: <span className="text-gray-700">{product.id}</span>
           </p>
