@@ -1,5 +1,6 @@
 // src/data/products.ts
 export interface Product {
+  description: string;
   id: string;
   name: string;
   price: number;
@@ -14,12 +15,14 @@ export const products: Product[] = [
     price: 1299.99,
     image: '/assets/products/ultrabook-pro-15.jpg',
     category: 'laptops',
+    description: ""
   },  {
     id: 'ultrabook-pro-15d',
     name: 'UltraBook Pro 15',
     price: 500.99,
     image: '/assets/products/ultrabook-pro-15.jpg',
     category: 'laptops',
+    description: ""
   },
   {
     id: 'gaming-beast-x',
@@ -27,6 +30,7 @@ export const products: Product[] = [
     price: 1499.99,
     image: '/assets/products/gaming-beast-x.jpg',
     category: 'desktops',
+    description: ""
   },
   {
     id: 'wireless-headset-z',
@@ -34,6 +38,7 @@ export const products: Product[] = [
     price: 199.99,
     image: '/assets/products/headset-z.jpg',
     category: 'accessories',
+    description: ""
   },
   // …add as many as you like
 ];
