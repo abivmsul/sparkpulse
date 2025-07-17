@@ -103,6 +103,15 @@ export default function Navbar() {
           <Link to="/" className="block px-3 py-2 rounded hover:bg-gray-100">
             Home
           </Link>
+          <Link to="/products" className="block px-3 py-2 rounded hover:bg-gray-100">
+            Products
+          </Link>
+          <Link to="/abou" className="block px-3 py-2 rounded hover:bg-gray-100">
+            About
+          </Link>
+          <Link to="/contact" className="block px-3 py-2 rounded hover:bg-gray-100">
+            Contact
+          </Link>
           {/* ...other mobile links... */}
         </div>
       )}
